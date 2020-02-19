@@ -1,6 +1,6 @@
 module.exports = function (req, res, next) {
   let token;
-
+  console.log("Apiallowed");
   if (req.headers && req.headers.authorization) {
     var parts = req.headers.authorization.split(' ');
     if (parts.length == 2) {

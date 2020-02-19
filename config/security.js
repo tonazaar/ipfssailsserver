@@ -33,6 +33,15 @@ module.exports.security = {
   //   allowOrigins: '*',
   //   allowCredentials: false,
   // },
+	
+  cors: {
+     allRoutes: true,
+     allowOrigins: '*',
+//     allowOrigins: ['http://grandma-bfef5.firebaseapp.com'],
+     allowCredentials: false,
+     allowRequestHeaders: 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+   },
+
 
 
   /****************************************************************************
@@ -44,6 +53,6 @@ module.exports.security = {
   *                                                                           *
   ****************************************************************************/
 
-  csrf: true
+  csrf: false
 
 };
