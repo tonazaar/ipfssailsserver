@@ -11,12 +11,11 @@
 module.exports.policies = {
 
  
-   '*': true,        
-//        '*': ['isAuthorized'], // Everything resctricted here
+     '*': ['isAuthorized'], // Everything resctricted here
 
         UserController: {
           signup: true,
-          login: true
+          login: true,
         },
 
 

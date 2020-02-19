@@ -12,14 +12,6 @@ module.exports = {
       required: true,
       unique: true,
     },
-    username: {
-      type: "string",
-      required: true,
-    },
-    userid: {
-      type: "string",
-      required: true,
-    },
     password: {
       type: "string",
       required: true,

@@ -24,7 +24,7 @@ module.exports.routes = {
 
   'POST /api/auth/register': 'UserController.signup',
   'POST /api/auth/login': 'UserController.login',
-  'POST /api/auth/protected': 'UserController.check',
+  'GET /api/auth/protected': 'UserController.check',
   'POST /test': 'UserController.test',
 
 

@@ -13,11 +13,18 @@ module.exports = {
 
          }
 
+	   var rec = {
+            email: req.body.email,
+            password: req.body.password,
+         };
+
+         var newuser = await User.create(rec
+         ).fetch();
+
 
 	      var responseData = {
           email: newuser.email,
-          userid: newuser.userid,
-          token: generateToken(newuser.id)
+          token: 'JWT ' + generateToken(newuser.id)
         }
         return res.json(responseData)
 
@@ -45,8 +52,7 @@ module.exports = {
       } else {
         var responseData = {
           email: user[0].email,
-          userid: user[0].userid,
-          token: generateToken(user[0].id)
+          token: 'JWT ' + generateToken(user[0].id)
         }
         return res.json(responseData)
       }

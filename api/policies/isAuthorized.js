@@ -9,7 +9,7 @@
       var scheme = parts[0],
         credentials = parts[1];
 
-      if (/^Bearer$/i.test(scheme)) {
+      if (/^JWT$/i.test(scheme)) {
         token = credentials;
       }
     } else {
