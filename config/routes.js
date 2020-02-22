@@ -27,8 +27,8 @@ module.exports.routes = {
   'GET /api/auth/protected': 'UserController.check',
   'POST /test': 'UserController.test',
 
-  'GET /api/ipfsnode/startnode': 'IpfsnodeController.startnode',
-  'GET /api/ipfsnode/stopnode': 'IpfsnodeController.stopnode',
+  'POST /api/ipfsnode/startnode': 'IpfsnodeController.startnode',
+  'POST /api/ipfsnode/stopnode': 'IpfsnodeController.stopnode',
   'POST /api/ipfsnode/getipfsconfig': 'IpfsnodeController.getipfsconfig',
   'POST /api/ipfsnode/getnodestatus': 'IpfsnodeController.getnodestatus',
 
