@@ -12,6 +12,7 @@
     "ipfs": "^0.41.1",
     "ipfsd-ctl": "^3.0.0",
     "jsonwebtoken": "^8.5.1",
+    "promise": "^8.0.3",
     "sails": "^1.2.3",
     "sails-hook-apianalytics": "^2.0.3",
     "sails-hook-organics": "^0.16.0",

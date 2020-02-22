@@ -7,6 +7,7 @@ module.exports = {
 
 startnode : async function(req, res, next){
 
+   var username = req.body.userid;
 
    startnode(username).then(xx=> {
 	console.log("Message = "+xx);	
@@ -18,6 +19,7 @@ startnode : async function(req, res, next){
 
 },
 stopnode : async function(req, res, next){
+   var username = req.body.userid;
    stopnode(username).then(xx=> {
 	console.log("Message = "+xx);	
 	   res.json(xx)

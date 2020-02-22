@@ -34,7 +34,7 @@ module.exports.routes = {
 
   'POST /api/ipfsusage/getusage': 'IpfsusageController.getusage',
   'POST /api/ipfsusage/listfiles': 'IpfsusageController.listfiles',
-  'POST /api/ipfsusage/createfile': 'IpfsusageController.createfile',
+  'POST /api/ipfsusage/savefile': 'IpfsusageController.savefile',
   'POST /api/ipfsusage/deletefile': 'IpfsusageController.deletefile',
 
 

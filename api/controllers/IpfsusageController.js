@@ -45,6 +45,8 @@ deletefile : async function(req, res, next){
 
 }
 
+}
+
 function generateToken(user_id) {
   return JwtService.issue({id: user_id})
 };
